@@ -39,7 +39,7 @@
 [v ___lmul __lmul `(ul  1 e 4 0 ]
 "91 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul64.c
 [v ___omul __omul `(uo  1 e 8 0 ]
-"4 C:\Users\danie\OneDrive\Documentos\PIC18F4550\Final_project\ROAR_Tx.X\lcd_lib.c
+"4 C:\Users\danie\OneDrive\Documentos\PIC18F4550\Final_project\Robot-SCARA-with-PIC18F4550\ROAR_Tx.X\lcd_lib.c
 [v _init_LCD init_LCD `(v  1 e 1 0 ]
 "43
 [v _clear_LCD clear_LCD `(v  1 e 1 0 ]
@@ -49,11 +49,11 @@
 [v _writeString_LCD writeString_LCD `(v  1 e 1 0 ]
 "70
 [v _set_Cursor_LCD set_Cursor_LCD `(v  1 e 1 0 ]
-"4 C:\Users\danie\OneDrive\Documentos\PIC18F4550\Final_project\ROAR_Tx.X\SPI.c
+"4 C:\Users\danie\OneDrive\Documentos\PIC18F4550\Final_project\Robot-SCARA-with-PIC18F4550\ROAR_Tx.X\SPI.c
 [v _SPI_Init_Master SPI_Init_Master `(v  1 e 1 0 ]
 "93
 [v _SPI_Tx SPI_Tx `(v  1 e 1 0 ]
-"23 C:\Users\danie\OneDrive\Documentos\PIC18F4550\Final_project\ROAR_Tx.X\tx_main.c
+"23 C:\Users\danie\OneDrive\Documentos\PIC18F4550\Final_project\Robot-SCARA-with-PIC18F4550\ROAR_Tx.X\tx_main.c
 [v _main main `(v  1 e 1 0 ]
 [s S168 . 1 `uc 1 LATA0 1 0 :1:0 
 `uc 1 LATA1 1 0 :1:1 
@@ -245,14 +245,14 @@
 [v _width width `i  1 s 2 width ]
 "154
 [v _flags flags `uc  1 s 1 flags ]
-"20 C:\Users\danie\OneDrive\Documentos\PIC18F4550\Final_project\ROAR_Tx.X\tx_main.c
+"20 C:\Users\danie\OneDrive\Documentos\PIC18F4550\Final_project\Robot-SCARA-with-PIC18F4550\ROAR_Tx.X\tx_main.c
 [v _DATA_LCD DATA_LCD `[16]uc  1 e 16 0 ]
 "23
 [v _main main `(v  1 e 1 0 ]
 {
 "48
 } 0
-"62 C:\Users\danie\OneDrive\Documentos\PIC18F4550\Final_project\ROAR_Tx.X\lcd_lib.c
+"62 C:\Users\danie\OneDrive\Documentos\PIC18F4550\Final_project\Robot-SCARA-with-PIC18F4550\ROAR_Tx.X\lcd_lib.c
 [v _writeString_LCD writeString_LCD `(v  1 e 1 0 ]
 {
 "64
@@ -319,7 +319,7 @@
 {
 "9
 } 0
-"4 C:\Users\danie\OneDrive\Documentos\PIC18F4550\Final_project\ROAR_Tx.X\lcd_lib.c
+"4 C:\Users\danie\OneDrive\Documentos\PIC18F4550\Final_project\Robot-SCARA-with-PIC18F4550\ROAR_Tx.X\lcd_lib.c
 [v _init_LCD init_LCD `(v  1 e 1 0 ]
 {
 "40
@@ -339,7 +339,7 @@
 {
 "49
 } 0
-"93 C:\Users\danie\OneDrive\Documentos\PIC18F4550\Final_project\ROAR_Tx.X\SPI.c
+"93 C:\Users\danie\OneDrive\Documentos\PIC18F4550\Final_project\Robot-SCARA-with-PIC18F4550\ROAR_Tx.X\SPI.c
 [v _SPI_Tx SPI_Tx `(v  1 e 1 0 ]
 {
 [v SPI_Tx@dato dato `uc  1 p 1 wreg ]
