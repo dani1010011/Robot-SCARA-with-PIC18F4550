@@ -3,6 +3,10 @@
 [d edition pro ]
 [d chip 18F4550 ]
 [d frameptr 4065 ]
+"4 C:\Users\danie\OneDrive\Documentos\PIC18F4550\Final_project\Robot-SCARA-with-PIC18F4550\ROAR_Tx.X\adc_lib.c
+[v _init_ADC init_ADC `(v  1 e 1 0 ]
+"11
+[v _read_ADC read_ADC `(ui  1 e 2 0 ]
 "1177 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\doprnt.c
 [v _vfpfcnvrt vfpfcnvrt `(v  1 s 1 vfpfcnvrt ]
 "1817
@@ -11,6 +15,8 @@
 [v ___fleq __fleq `(b  1 e 0 0 ]
 "62 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\float.c
 [v ___ftpack __ftpack `(f  1 e 4 0 ]
+"43 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
 "86 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\ftadd.c
 [v ___ftadd __ftadd `(f  1 e 4 0 ]
 "54 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\ftdiv.c
@@ -39,7 +45,9 @@
 [v ___lmul __lmul `(ul  1 e 4 0 ]
 "91 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul64.c
 [v ___omul __omul `(uo  1 e 8 0 ]
-"4 C:\Users\danie\OneDrive\Documentos\PIC18F4550\Final_project\ROAR_Tx.X\lcd_lib.c
+"10 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+"4 C:\Users\danie\OneDrive\Documentos\PIC18F4550\Final_project\Robot-SCARA-with-PIC18F4550\ROAR_Tx.X\lcd_lib.c
 [v _init_LCD init_LCD `(v  1 e 1 0 ]
 "43
 [v _clear_LCD clear_LCD `(v  1 e 1 0 ]
@@ -49,13 +57,21 @@
 [v _writeString_LCD writeString_LCD `(v  1 e 1 0 ]
 "70
 [v _set_Cursor_LCD set_Cursor_LCD `(v  1 e 1 0 ]
-"4 C:\Users\danie\OneDrive\Documentos\PIC18F4550\Final_project\ROAR_Tx.X\SPI.c
+"15 C:\Users\danie\OneDrive\Documentos\PIC18F4550\Final_project\Robot-SCARA-with-PIC18F4550\ROAR_Tx.X\pwm_soft.c
+[v _INT_TMR0 INT_TMR0 `IIH(v  1 e 1 0 ]
+"69
+[v _PWM_Init PWM_Init `(v  1 e 1 0 ]
+"85
+[v _PWM_Init_Ports PWM_Init_Ports `(v  1 e 1 0 ]
+"4 C:\Users\danie\OneDrive\Documentos\PIC18F4550\Final_project\Robot-SCARA-with-PIC18F4550\ROAR_Tx.X\SPI.c
 [v _SPI_Init_Master SPI_Init_Master `(v  1 e 1 0 ]
 "93
 [v _SPI_Tx SPI_Tx `(v  1 e 1 0 ]
-"23 C:\Users\danie\OneDrive\Documentos\PIC18F4550\Final_project\ROAR_Tx.X\tx_main.c
+"32 C:\Users\danie\OneDrive\Documentos\PIC18F4550\Final_project\Robot-SCARA-with-PIC18F4550\ROAR_Tx.X\tx_main.c
 [v _main main `(v  1 e 1 0 ]
-[s S168 . 1 `uc 1 LATA0 1 0 :1:0 
+"75
+[v _mapping mapping `(i  1 e 2 0 ]
+[s S217 . 1 `uc 1 LATA0 1 0 :1:0 
 `uc 1 LATA1 1 0 :1:1 
 `uc 1 LATA2 1 0 :1:2 
 `uc 1 LATA3 1 0 :1:3 
@@ -64,7 +80,7 @@
 `uc 1 LATA6 1 0 :1:6 
 ]
 "2998 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4550.h
-[s S176 . 1 `uc 1 LA0 1 0 :1:0 
+[s S225 . 1 `uc 1 LA0 1 0 :1:0 
 `uc 1 LA1 1 0 :1:1 
 `uc 1 LA2 1 0 :1:2 
 `uc 1 LA3 1 0 :1:3 
@@ -72,8 +88,8 @@
 `uc 1 LA5 1 0 :1:5 
 `uc 1 LA6 1 0 :1:6 
 ]
-[u S184 . 1 `S168 1 . 1 0 `S176 1 . 1 0 ]
-[v _LATAbits LATAbits `VES184  1 e 1 @3977 ]
+[u S233 . 1 `S217 1 . 1 0 `S225 1 . 1 0 ]
+[v _LATAbits LATAbits `VES233  1 e 1 @3977 ]
 [s S66 . 1 `uc 1 LATB0 1 0 :1:0 
 `uc 1 LATB1 1 0 :1:1 
 `uc 1 LATB2 1 0 :1:2 
@@ -97,7 +113,7 @@
 [v _LATBbits LATBbits `VES84  1 e 1 @3978 ]
 "3263
 [v _LATD LATD `VEuc  1 e 1 @3980 ]
-[s S250 . 1 `uc 1 TRISA0 1 0 :1:0 
+[s S314 . 1 `uc 1 TRISA0 1 0 :1:0 
 `uc 1 TRISA1 1 0 :1:1 
 `uc 1 TRISA2 1 0 :1:2 
 `uc 1 TRISA3 1 0 :1:3 
@@ -106,7 +122,7 @@
 `uc 1 TRISA6 1 0 :1:6 
 ]
 "3457
-[s S258 . 1 `uc 1 RA0 1 0 :1:0 
+[s S322 . 1 `uc 1 RA0 1 0 :1:0 
 `uc 1 RA1 1 0 :1:1 
 `uc 1 RA2 1 0 :1:2 
 `uc 1 RA3 1 0 :1:3 
@@ -114,8 +130,8 @@
 `uc 1 RA5 1 0 :1:5 
 `uc 1 RA6 1 0 :1:6 
 ]
-[u S266 . 1 `S250 1 . 1 0 `S258 1 . 1 0 ]
-[v _TRISAbits TRISAbits `VES266  1 e 1 @3986 ]
+[u S330 . 1 `S314 1 . 1 0 `S322 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES330  1 e 1 @3986 ]
 [s S26 . 1 `uc 1 TRISB0 1 0 :1:0 
 `uc 1 TRISB1 1 0 :1:1 
 `uc 1 TRISB2 1 0 :1:2 
@@ -137,7 +153,7 @@
 ]
 [u S44 . 1 `S26 1 . 1 0 `S35 1 . 1 0 ]
 [v _TRISBbits TRISBbits `VES44  1 e 1 @3987 ]
-[s S286 . 1 `uc 1 TRISC0 1 0 :1:0 
+[s S350 . 1 `uc 1 TRISC0 1 0 :1:0 
 `uc 1 TRISC1 1 0 :1:1 
 `uc 1 TRISC2 1 0 :1:2 
 `uc 1 . 1 0 :3:3 
@@ -145,41 +161,79 @@
 `uc 1 TRISC7 1 0 :1:7 
 ]
 "3875
-[s S293 . 1 `uc 1 RC0 1 0 :1:0 
+[s S357 . 1 `uc 1 RC0 1 0 :1:0 
 `uc 1 RC1 1 0 :1:1 
 `uc 1 RC2 1 0 :1:2 
 `uc 1 . 1 0 :3:3 
 `uc 1 RC6 1 0 :1:6 
 `uc 1 RC7 1 0 :1:7 
 ]
-[u S300 . 1 `S286 1 . 1 0 `S293 1 . 1 0 ]
-[v _TRISCbits TRISCbits `VES300  1 e 1 @3988 ]
+[u S364 . 1 `S350 1 . 1 0 `S357 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES364  1 e 1 @3988 ]
 "4001
 [v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+"6510
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @4032 ]
 "6581
 [v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
-[s S318 . 1 `uc 1 SSPM 1 0 :4:0 
+"6666
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @4034 ]
+[s S589 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_NOT_DONE 1 0 :1:1 
+]
+"6710
+[s S592 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :4:2 
+]
+[s S596 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_DONE 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+]
+[s S603 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 DONE 1 0 :1:1 
+]
+[s S606 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+]
+[s S609 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_DONE 1 0 :1:1 
+]
+[s S612 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 nDONE 1 0 :1:1 
+]
+[s S615 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GODONE 1 0 :1:1 
+]
+[u S618 . 1 `S589 1 . 1 0 `S592 1 . 1 0 `S596 1 . 1 0 `S603 1 . 1 0 `S606 1 . 1 0 `S609 1 . 1 0 `S612 1 . 1 0 `S615 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES618  1 e 1 @4034 ]
+"6785
+[v _ADRES ADRES `VEus  1 e 2 @4035 ]
+[s S382 . 1 `uc 1 SSPM 1 0 :4:0 
 `uc 1 CKP 1 0 :1:4 
 `uc 1 SSPEN 1 0 :1:5 
 `uc 1 SSPOV 1 0 :1:6 
 `uc 1 WCOL 1 0 :1:7 
 ]
 "6888
-[s S324 . 1 `uc 1 SSPM0 1 0 :1:0 
+[s S388 . 1 `uc 1 SSPM0 1 0 :1:0 
 `uc 1 SSPM1 1 0 :1:1 
 `uc 1 SSPM2 1 0 :1:2 
 `uc 1 SSPM3 1 0 :1:3 
 ]
-[u S329 . 1 `S318 1 . 1 0 `S324 1 . 1 0 ]
-[v _SSPCON1bits SSPCON1bits `VES329  1 e 1 @4038 ]
-[s S344 . 1 `uc 1 . 1 0 :2:0 
+[u S393 . 1 `S382 1 . 1 0 `S388 1 . 1 0 ]
+[v _SSPCON1bits SSPCON1bits `VES393  1 e 1 @4038 ]
+[s S408 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 R_NOT_W 1 0 :1:2 
 ]
 "7021
-[s S347 . 1 `uc 1 . 1 0 :5:0 
+[s S411 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 D_NOT_A 1 0 :1:5 
 ]
-[s S350 . 1 `uc 1 BF 1 0 :1:0 
+[s S414 . 1 `uc 1 BF 1 0 :1:0 
 `uc 1 UA 1 0 :1:1 
 `uc 1 R_nW 1 0 :1:2 
 `uc 1 S 1 0 :1:3 
@@ -188,71 +242,182 @@
 `uc 1 CKE 1 0 :1:6 
 `uc 1 SMP 1 0 :1:7 
 ]
-[s S359 . 1 `uc 1 . 1 0 :2:0 
+[s S423 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 R_W 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 D_A 1 0 :1:5 
 ]
-[s S364 . 1 `uc 1 . 1 0 :2:0 
+[s S428 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 I2C_READ 1 0 :1:2 
 `uc 1 I2C_START 1 0 :1:3 
 `uc 1 I2C_STOP 1 0 :1:4 
 `uc 1 I2C_DAT 1 0 :1:5 
 ]
-[s S370 . 1 `uc 1 . 1 0 :2:0 
+[s S434 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 nW 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 nA 1 0 :1:5 
 ]
-[s S375 . 1 `uc 1 . 1 0 :2:0 
+[s S439 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 NOT_WRITE 1 0 :1:2 
 ]
-[s S378 . 1 `uc 1 . 1 0 :5:0 
+[s S442 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 NOT_ADDRESS 1 0 :1:5 
 ]
-[s S381 . 1 `uc 1 . 1 0 :2:0 
+[s S445 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 nWRITE 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 nADDRESS 1 0 :1:5 
 ]
-[s S386 . 1 `uc 1 . 1 0 :2:0 
+[s S450 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 READ_WRITE 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 DATA_ADDRESS 1 0 :1:5 
 ]
-[s S391 . 1 `uc 1 . 1 0 :2:0 
+[s S455 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 R 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 D 1 0 :1:5 
 ]
-[s S396 . 1 `uc 1 . 1 0 :2:0 
+[s S460 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 RW 1 0 :1:2 
 `uc 1 START 1 0 :1:3 
 `uc 1 STOP 1 0 :1:4 
 `uc 1 DA 1 0 :1:5 
 ]
-[s S402 . 1 `uc 1 . 1 0 :2:0 
+[s S466 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 NOT_W 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 NOT_A 1 0 :1:5 
 ]
-[u S407 . 1 `S344 1 . 1 0 `S347 1 . 1 0 `S350 1 . 1 0 `S359 1 . 1 0 `S364 1 . 1 0 `S370 1 . 1 0 `S375 1 . 1 0 `S378 1 . 1 0 `S381 1 . 1 0 `S386 1 . 1 0 `S391 1 . 1 0 `S396 1 . 1 0 `S402 1 . 1 0 ]
-[v _SSPSTATbits SSPSTATbits `VES407  1 e 1 @4039 ]
+[u S471 . 1 `S408 1 . 1 0 `S411 1 . 1 0 `S414 1 . 1 0 `S423 1 . 1 0 `S428 1 . 1 0 `S434 1 . 1 0 `S439 1 . 1 0 `S442 1 . 1 0 `S445 1 . 1 0 `S450 1 . 1 0 `S455 1 . 1 0 `S460 1 . 1 0 `S466 1 . 1 0 ]
+[v _SSPSTATbits SSPSTATbits `VES471  1 e 1 @4039 ]
 "7193
 [v _SSPBUF SSPBUF `VEuc  1 e 1 @4041 ]
+[s S743 . 1 `uc 1 NOT_BOR 1 0 :1:0 
+]
+"7588
+[s S745 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_POR 1 0 :1:1 
+]
+[s S748 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_PD 1 0 :1:2 
+]
+[s S751 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_TO 1 0 :1:3 
+]
+[s S754 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 NOT_RI 1 0 :1:4 
+]
+[s S757 . 1 `uc 1 nBOR 1 0 :1:0 
+`uc 1 nPOR 1 0 :1:1 
+`uc 1 nPD 1 0 :1:2 
+`uc 1 nTO 1 0 :1:3 
+`uc 1 nRI 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 SBOREN 1 0 :1:6 
+`uc 1 IPEN 1 0 :1:7 
+]
+[s S766 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 NOT_IPEN 1 0 :1:7 
+]
+[s S769 . 1 `uc 1 BOR 1 0 :1:0 
+`uc 1 POR 1 0 :1:1 
+`uc 1 PD 1 0 :1:2 
+`uc 1 TO 1 0 :1:3 
+`uc 1 RI 1 0 :1:4 
+`uc 1 . 1 0 :2:5 
+`uc 1 nIPEN 1 0 :1:7 
+]
+[u S777 . 1 `S743 1 . 1 0 `S745 1 . 1 0 `S748 1 . 1 0 `S751 1 . 1 0 `S754 1 . 1 0 `S757 1 . 1 0 `S766 1 . 1 0 `S769 1 . 1 0 ]
+[v _RCONbits RCONbits `VES777  1 e 1 @4048 ]
+"8069
+[v _T0CON T0CON `VEuc  1 e 1 @4053 ]
+[s S861 . 1 `uc 1 T0PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 T08BIT 1 0 :1:6 
+`uc 1 TMR0ON 1 0 :1:7 
+]
+"8089
+[s S868 . 1 `uc 1 T0PS0 1 0 :1:0 
+`uc 1 T0PS1 1 0 :1:1 
+`uc 1 T0PS2 1 0 :1:2 
+]
+[u S872 . 1 `S861 1 . 1 0 `S868 1 . 1 0 ]
+[v _T0CONbits T0CONbits `VES872  1 e 1 @4053 ]
+"8139
+[v _TMR0 TMR0 `VEus  1 e 2 @4054 ]
+[s S821 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 NOT_RBPU 1 0 :1:7 
+]
+"8532
+[s S824 . 1 `uc 1 RBIP 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 TMR0IP 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INTEDG2 1 0 :1:4 
+`uc 1 INTEDG1 1 0 :1:5 
+`uc 1 INTEDG0 1 0 :1:6 
+`uc 1 nRBPU 1 0 :1:7 
+]
+[s S833 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IP 1 0 :1:2 
+`uc 1 . 1 0 :4:3 
+`uc 1 RBPU 1 0 :1:7 
+]
+[u S838 . 1 `S821 1 . 1 0 `S824 1 . 1 0 `S833 1 . 1 0 ]
+[v _INTCON2bits INTCON2bits `VES838  1 e 1 @4081 ]
+[s S671 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"8614
+[s S680 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S689 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S693 . 1 `S671 1 . 1 0 `S680 1 . 1 0 `S689 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES693  1 e 1 @4082 ]
 "153 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\doprnt.c
 [v _prec prec `i  1 s 2 prec ]
 [v _width width `i  1 s 2 width ]
 "154
 [v _flags flags `uc  1 s 1 flags ]
-"20 C:\Users\danie\OneDrive\Documentos\PIC18F4550\Final_project\ROAR_Tx.X\tx_main.c
+"11 C:\Users\danie\OneDrive\Documentos\PIC18F4550\Final_project\Robot-SCARA-with-PIC18F4550\ROAR_Tx.X\pwm_soft.c
+[v _contador contador `ui  1 e 2 0 ]
+"12
+[v _pwm_value pwm_value `[10]i  1 e 20 0 ]
+"25 C:\Users\danie\OneDrive\Documentos\PIC18F4550\Final_project\Robot-SCARA-with-PIC18F4550\ROAR_Tx.X\tx_main.c
 [v _DATA_LCD DATA_LCD `[16]uc  1 e 16 0 ]
-"23
+"28
+[v _dof1 dof1 `i  1 e 2 0 ]
+[v _x x `i  1 e 2 0 ]
+"29
+[v _dof2 dof2 `i  1 e 2 0 ]
+"30
+[v _z z `i  1 e 2 0 ]
+"32
 [v _main main `(v  1 e 1 0 ]
 {
-"48
+"73
 } 0
-"62 C:\Users\danie\OneDrive\Documentos\PIC18F4550\Final_project\ROAR_Tx.X\lcd_lib.c
+"62 C:\Users\danie\OneDrive\Documentos\PIC18F4550\Final_project\Robot-SCARA-with-PIC18F4550\ROAR_Tx.X\lcd_lib.c
 [v _writeString_LCD writeString_LCD `(v  1 e 1 0 ]
 {
 "64
@@ -273,10 +438,10 @@
 "9 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\nf_sprintf.c
 [v _sprintf sprintf `(i  1 e 2 0 ]
 {
-[u S959 . 2 `*.30uc 1 buffer 1 0 `*.39Cuc 1 source 2 0 ]
+[u S1395 . 2 `*.30uc 1 buffer 1 0 `*.39Cuc 1 source 2 0 ]
 "13
-[s S962 _IO_FILE 11 `S959 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
-[v sprintf@f f `S962  1 a 11 18 ]
+[s S1398 _IO_FILE 11 `S1395 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v sprintf@f f `S1398  1 a 11 18 ]
 "12
 [v sprintf@ap ap `[1]*.30v  1 a 1 17 ]
 "9
@@ -289,9 +454,9 @@
 {
 "1820
 [v vfprintf@cfmt cfmt `*.31uc  1 a 1 14 ]
-[s S994 _IO_FILE 0 ]
+[s S1430 _IO_FILE 0 ]
 "1817
-[v vfprintf@fp fp `*.30S994  1 p 1 11 ]
+[v vfprintf@fp fp `*.30S1430  1 p 1 11 ]
 [v vfprintf@fmt fmt `*.31Cuc  1 p 1 12 ]
 [v vfprintf@ap ap `*.30*.30v  1 p 1 13 ]
 "1840
@@ -299,8 +464,8 @@
 "1177
 [v _vfpfcnvrt vfpfcnvrt `(v  1 s 1 vfpfcnvrt ]
 {
-[s S994 _IO_FILE 0 ]
-[v vfpfcnvrt@fp fp `*.30S994  1 p 1 8 ]
+[s S1430 _IO_FILE 0 ]
+[v vfpfcnvrt@fp fp `*.30S1430  1 p 1 8 ]
 [v vfpfcnvrt@fmt fmt `*.30*.31uc  1 p 1 9 ]
 [v vfpfcnvrt@ap ap `*.30*.30v  1 p 1 10 ]
 "1814
@@ -309,9 +474,9 @@
 [v _fputc fputc `(i  1 e 2 0 ]
 {
 [v fputc@c c `i  1 p 2 0 ]
-[u S959 . 2 `*.30uc 1 buffer 1 0 `*.39Cuc 1 source 2 0 ]
-[s S962 _IO_FILE 11 `S959 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
-[v fputc@fp fp `*.30S962  1 p 1 2 ]
+[u S1395 . 2 `*.30uc 1 buffer 1 0 `*.39Cuc 1 source 2 0 ]
+[s S1398 _IO_FILE 11 `S1395 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v fputc@fp fp `*.30S1398  1 p 1 2 ]
 "24
 } 0
 "7 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\putch.c
@@ -319,7 +484,123 @@
 {
 "9
 } 0
-"4 C:\Users\danie\OneDrive\Documentos\PIC18F4550\Final_project\ROAR_Tx.X\lcd_lib.c
+"11 C:\Users\danie\OneDrive\Documentos\PIC18F4550\Final_project\Robot-SCARA-with-PIC18F4550\ROAR_Tx.X\adc_lib.c
+[v _read_ADC read_ADC `(ui  1 e 2 0 ]
+{
+[v read_ADC@canal canal `uc  1 p 1 wreg ]
+[v read_ADC@canal canal `uc  1 p 1 wreg ]
+[v read_ADC@canal canal `uc  1 p 1 3 ]
+"25
+} 0
+"75 C:\Users\danie\OneDrive\Documentos\PIC18F4550\Final_project\Robot-SCARA-with-PIC18F4550\ROAR_Tx.X\tx_main.c
+[v _mapping mapping `(i  1 e 2 0 ]
+{
+"76
+[v mapping@m m `f  1 a 4 24 ]
+[v mapping@b b `f  1 a 4 18 ]
+[v mapping@y y `i  1 a 2 22 ]
+"75
+[v mapping@min_in min_in `f  1 p 4 0 ]
+[v mapping@max_in max_in `f  1 p 4 4 ]
+[v mapping@min_out min_out `f  1 p 4 8 ]
+[v mapping@max_out max_out `f  1 p 4 12 ]
+[v mapping@read read `i  1 p 2 16 ]
+"81
+} 0
+"10 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+{
+[v ___xxtofl@sign sign `uc  1 p 1 wreg ]
+"13
+[v ___xxtofl@arg arg `ul  1 a 4 10 ]
+"12
+[v ___xxtofl@exp exp `uc  1 a 1 9 ]
+"10
+[v ___xxtofl@sign sign `uc  1 p 1 wreg ]
+[v ___xxtofl@val val `l  1 p 4 0 ]
+"15
+[v ___xxtofl@sign sign `uc  1 p 1 8 ]
+"44
+} 0
+"43 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+{
+"45
+[v ___fltol@exp1 exp1 `uc  1 a 1 64 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 63 ]
+"43
+[v ___fltol@f1 f1 `d  1 p 4 55 ]
+"70
+} 0
+"245 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcadd.c
+[v ___flsub __flsub `(d  1 e 4 0 ]
+{
+[v ___flsub@b b `d  1 p 4 55 ]
+[v ___flsub@a a `d  1 p 4 59 ]
+"250
+} 0
+"10
+[v ___fladd __fladd `(d  1 e 4 0 ]
+{
+"17
+[v ___fladd@grs grs `uc  1 a 1 54 ]
+"15
+[v ___fladd@bexp bexp `uc  1 a 1 53 ]
+"16
+[v ___fladd@aexp aexp `uc  1 a 1 52 ]
+"13
+[v ___fladd@signs signs `uc  1 a 1 51 ]
+"10
+[v ___fladd@b b `d  1 p 4 39 ]
+[v ___fladd@a a `d  1 p 4 43 ]
+"237
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+{
+[s S1260 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+"13
+[s S1265 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
+[u S1268 . 4 `l 1 i 4 0 `d 1 f 4 0 `S1260 1 fAsBytes 4 0 `S1265 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S1268  1 a 4 33 ]
+"12
+[v ___flmul@grs grs `ul  1 a 4 27 ]
+[s S1336 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+"14
+[u S1339 . 2 `s 1 i 2 0 `us 1 n 2 0 `S1336 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S1339  1 a 2 37 ]
+"10
+[v ___flmul@bexp bexp `uc  1 a 1 32 ]
+"11
+[v ___flmul@aexp aexp `uc  1 a 1 31 ]
+"9
+[v ___flmul@sign sign `uc  1 a 1 26 ]
+"8
+[v ___flmul@b b `d  1 p 4 14 ]
+[v ___flmul@a a `d  1 p 4 18 ]
+"205
+} 0
+"11 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+{
+"21
+[v ___fldiv@grs grs `ul  1 a 4 82 ]
+"22
+[v ___fldiv@rem rem `ul  1 a 4 75 ]
+"20
+[v ___fldiv@new_exp new_exp `s  1 a 2 80 ]
+"19
+[v ___fldiv@aexp aexp `uc  1 a 1 87 ]
+"18
+[v ___fldiv@bexp bexp `uc  1 a 1 86 ]
+"16
+[v ___fldiv@sign sign `uc  1 a 1 79 ]
+"11
+[v ___fldiv@b b `d  1 p 4 63 ]
+[v ___fldiv@a a `d  1 p 4 67 ]
+"185
+} 0
+"4 C:\Users\danie\OneDrive\Documentos\PIC18F4550\Final_project\Robot-SCARA-with-PIC18F4550\ROAR_Tx.X\lcd_lib.c
 [v _init_LCD init_LCD `(v  1 e 1 0 ]
 {
 "40
@@ -339,7 +620,16 @@
 {
 "49
 } 0
-"93 C:\Users\danie\OneDrive\Documentos\PIC18F4550\Final_project\ROAR_Tx.X\SPI.c
+"4 C:\Users\danie\OneDrive\Documentos\PIC18F4550\Final_project\Robot-SCARA-with-PIC18F4550\ROAR_Tx.X\adc_lib.c
+[v _init_ADC init_ADC `(v  1 e 1 0 ]
+{
+[v init_ADC@Puertos_ADC Puertos_ADC `uc  1 p 1 wreg ]
+[v init_ADC@Puertos_ADC Puertos_ADC `uc  1 p 1 wreg ]
+"6
+[v init_ADC@Puertos_ADC Puertos_ADC `uc  1 p 1 0 ]
+"9
+} 0
+"93 C:\Users\danie\OneDrive\Documentos\PIC18F4550\Final_project\Robot-SCARA-with-PIC18F4550\ROAR_Tx.X\SPI.c
 [v _SPI_Tx SPI_Tx `(v  1 e 1 0 ]
 {
 [v SPI_Tx@dato dato `uc  1 p 1 wreg ]
@@ -357,4 +647,19 @@
 "7
 [v SPI_Init_Master@reloj reloj `uc  1 p 1 2 ]
 "49
+} 0
+"85 C:\Users\danie\OneDrive\Documentos\PIC18F4550\Final_project\Robot-SCARA-with-PIC18F4550\ROAR_Tx.X\pwm_soft.c
+[v _PWM_Init_Ports PWM_Init_Ports `(v  1 e 1 0 ]
+{
+"127
+} 0
+"69
+[v _PWM_Init PWM_Init `(v  1 e 1 0 ]
+{
+"83
+} 0
+"15
+[v _INT_TMR0 INT_TMR0 `IIH(v  1 e 1 0 ]
+{
+"66
 } 0

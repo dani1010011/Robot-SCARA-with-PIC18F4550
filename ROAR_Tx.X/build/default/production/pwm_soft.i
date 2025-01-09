@@ -1,4 +1,4 @@
-# 1 "tx_main.c"
+# 1 "pwm_soft.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,9 +6,17 @@
 # 1 "<built-in>" 2
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.50\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "tx_main.c" 2
-# 10 "tx_main.c"
-# 1 "./18F4550.h" 1
+# 1 "pwm_soft.c" 2
+
+
+
+
+
+
+
+
+# 1 "./pwm_soft.h" 1
+
 
 
 
@@ -5740,257 +5748,61 @@ __attribute__((__unsupported__("The " "Write_b_eep" " routine is no longer suppo
 unsigned char __t1rd16on(void);
 unsigned char __t3rd16on(void);
 # 33 "C:\\Program Files\\Microchip\\xc8\\v2.50\\pic\\include\\xc.h" 2 3
-# 8 "./18F4550.h" 2
-# 10 "tx_main.c" 2
-
-
-# 1 "./SPI.h" 1
-# 29 "./SPI.h"
-void SPI_Init_Master(char reloj, char modo, char smp);
-void SPI_Init_Slave(char reloj, char modo);
-void SPI_Tx(char dato);
-char SPI_Rx();
-# 12 "tx_main.c" 2
-
-# 1 "./lcd_lib.h" 1
-# 13 "./lcd_lib.h"
-void init_LCD(void);
-void clear_LCD(void);
-void writeChar_LCD(char dato_LCD);
-void writeString_LCD(const char *dato_LCD);
-void set_Cursor_LCD(char x,char y);
-# 13 "tx_main.c" 2
-
-# 1 "./pwm_soft.h" 1
+# 10 "./pwm_soft.h" 2
 # 44 "./pwm_soft.h"
 void PWM_Init(void);
 void PWM_Init_Ports(void);
 # 56 "./pwm_soft.h"
 void PWM_CH2_Duty(int duty);
-# 14 "tx_main.c" 2
-
-# 1 "./adc_lib.h" 1
-# 20 "./adc_lib.h"
-void init_ADC(char Puertos_ADC);
-unsigned int read_ADC(unsigned char canal);
-# 15 "tx_main.c" 2
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.50\\pic\\include\\c99\\stdio.h" 1 3
-# 24 "C:\\Program Files\\Microchip\\xc8\\v2.50\\pic\\include\\c99\\stdio.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.50\\pic\\include\\c99\\bits/alltypes.h" 1 3
-# 12 "C:\\Program Files\\Microchip\\xc8\\v2.50\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef void * va_list[1];
+# 9 "pwm_soft.c" 2
 
 
+unsigned int contador;
+int pwm_value[10];
 
 
-typedef void * __isoc_va_list[1];
-# 143 "C:\\Program Files\\Microchip\\xc8\\v2.50\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef __int24 ssize_t;
-# 255 "C:\\Program Files\\Microchip\\xc8\\v2.50\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef long long off_t;
-# 409 "C:\\Program Files\\Microchip\\xc8\\v2.50\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef struct _IO_FILE FILE;
-# 25 "C:\\Program Files\\Microchip\\xc8\\v2.50\\pic\\include\\c99\\stdio.h" 2 3
-# 52 "C:\\Program Files\\Microchip\\xc8\\v2.50\\pic\\include\\c99\\stdio.h" 3
-typedef union _G_fpos64_t {
- char __opaque[16];
- double __align;
-} fpos_t;
-
-extern FILE *const stdin;
-extern FILE *const stdout;
-extern FILE *const stderr;
-
-
-
-
-
-FILE *fopen(const char *restrict, const char *restrict);
-FILE *freopen(const char *restrict, const char *restrict, FILE *restrict);
-int fclose(FILE *);
-
-int remove(const char *);
-int rename(const char *, const char *);
-
-int feof(FILE *);
-int ferror(FILE *);
-int fflush(FILE *);
-void clearerr(FILE *);
-
-int fseek(FILE *, long, int);
-long ftell(FILE *);
-void rewind(FILE *);
-
-int fgetpos(FILE *restrict, fpos_t *restrict);
-int fsetpos(FILE *, const fpos_t *);
-
-size_t fread(void *restrict, size_t, size_t, FILE *restrict);
-size_t fwrite(const void *restrict, size_t, size_t, FILE *restrict);
-
-int fgetc(FILE *);
-int getc(FILE *);
-int getchar(void);
-
-
-
-
-
-int ungetc(int, FILE *);
-int getch(void);
-
-int fputc(int, FILE *);
-int putc(int, FILE *);
-int putchar(int);
-
-
-
-
-
-void putch(char);
-
-char *fgets(char *restrict, int, FILE *restrict);
-
-char *gets(char *);
-
-
-int fputs(const char *restrict, FILE *restrict);
-int puts(const char *);
-
-__attribute__((__format__(__printf__, 1, 2)))
-int printf(const char *restrict, ...);
-__attribute__((__format__(__printf__, 2, 3)))
-int fprintf(FILE *restrict, const char *restrict, ...);
-__attribute__((__format__(__printf__, 2, 3)))
-int sprintf(char *restrict, const char *restrict, ...);
-__attribute__((__format__(__printf__, 3, 4)))
-int snprintf(char *restrict, size_t, const char *restrict, ...);
-
-__attribute__((__format__(__printf__, 1, 0)))
-int vprintf(const char *restrict, __isoc_va_list);
-int vfprintf(FILE *restrict, const char *restrict, __isoc_va_list);
-__attribute__((__format__(__printf__, 2, 0)))
-int vsprintf(char *restrict, const char *restrict, __isoc_va_list);
-__attribute__((__format__(__printf__, 3, 0)))
-int vsnprintf(char *restrict, size_t, const char *restrict, __isoc_va_list);
-
-__attribute__((__format__(__scanf__, 1, 2)))
-int scanf(const char *restrict, ...);
-__attribute__((__format__(__scanf__, 2, 3)))
-int fscanf(FILE *restrict, const char *restrict, ...);
-__attribute__((__format__(__scanf__, 2, 3)))
-int sscanf(const char *restrict, const char *restrict, ...);
-
-__attribute__((__format__(__scanf__, 1, 0)))
-int vscanf(const char *restrict, __isoc_va_list);
-int vfscanf(FILE *restrict, const char *restrict, __isoc_va_list);
-__attribute__((__format__(__scanf__, 2, 0)))
-int vsscanf(const char *restrict, const char *restrict, __isoc_va_list);
-
-void perror(const char *);
-
-int setvbuf(FILE *restrict, char *restrict, int, size_t);
-void setbuf(FILE *restrict, char *restrict);
-
-char *tmpnam(char *);
-FILE *tmpfile(void);
-
-
-
-
-FILE *fmemopen(void *restrict, size_t, const char *restrict);
-FILE *open_memstream(char **, size_t *);
-FILE *fdopen(int, const char *);
-FILE *popen(const char *, const char *);
-int pclose(FILE *);
-int fileno(FILE *);
-int fseeko(FILE *, off_t, int);
-off_t ftello(FILE *);
-int dprintf(int, const char *restrict, ...);
-int vdprintf(int, const char *restrict, __isoc_va_list);
-void flockfile(FILE *);
-int ftrylockfile(FILE *);
-void funlockfile(FILE *);
-int getc_unlocked(FILE *);
-int getchar_unlocked(void);
-int putc_unlocked(int, FILE *);
-int putchar_unlocked(int);
-ssize_t getdelim(char **restrict, size_t *restrict, int, FILE *restrict);
-ssize_t getline(char **restrict, size_t *restrict, FILE *restrict);
-int renameat(int, const char *, int, const char *);
-char *ctermid(char *);
-
-
-
-
-
-
-
-char *tempnam(const char *, const char *);
-# 16 "tx_main.c" 2
-
-
-
-
-
-
-int control_data [7] ={0,0,0,0,0,0,0};
-
-
-char DATA_LCD[16];
-int data = 0;
-int mapping (float min_in, float max_in, float min_out, float max_out, int read);
-int dof1 = 0, x = 0;
-int dof2 = 0, y = 0;
-int z = 0;
-
-void main()
+void __attribute__((picinterrupt(("")))) INT_TMR0()
 {
-    init_LCD();
-    init_ADC(0X0D);
-    init_LCD();
-    PWM_Init();
-    PWM_Init_Ports();
-    TRISBbits.RB1 = 0;
-
-
-        sprintf(DATA_LCD,">> ROBOT ARM");
-        set_Cursor_LCD(1,2);
-        writeString_LCD(DATA_LCD);
-        sprintf(DATA_LCD,"CONTROLLER <<");
-        set_Cursor_LCD(2,1);
-        writeString_LCD(DATA_LCD);
-        _delay((unsigned long)((1000)*(48000000UL/4000.0)));
-        clear_LCD();
-
-
-    SPI_Init_Master(0, '1', 0);
-    _delay((unsigned long)((100)*(48000000UL/4000.0)));
-
-    while(1){
-        dof1 = read_ADC(0);
-        dof2 = read_ADC(1);
-
-        z = mapping(0,1023,-250,250,dof1);
-        x = mapping(0,1023,-250,250,dof2);
-
-        z = (z < 30 && z > -30) ? (z = 0) : (z = z);
-        x = (x < 30 && x > -30) ? (x = 0) : (x = x);
-
-
-
-        LATAbits.LA5 = 0;
-        SPI_Tx(z);
-        _delay((unsigned long)((5)*(48000000UL/4000.0)));
-        LATAbits.LA5 = 1;
-        _delay((unsigned long)((5)*(48000000UL/4000.0)));
+    if(INTCONbits.TMR0IF)
+    {
+        contador = contador + 7;
+        if(contador > 256){
+            contador = 0;
+        }
+# 32 "pwm_soft.c"
+        if(contador < pwm_value[2]){LATBbits.LB2 = 1;} else{LATBbits.LB2 = 0;}
+# 63 "pwm_soft.c"
+        TMR0 = 0;
+        INTCONbits.TMR0IF = 0;
     }
 }
 
-int mapping (float min_in, float max_in, float min_out, float max_out, int read){
-    int y = 0; float m; float b;
-    m = (float)((max_out - min_out) / (max_in - min_in));
-    b = (float)((min_out) - (m * min_in));
-    y = ((m) * read) + b;
-    return y;
+
+void PWM_Init(void)
+{
+    INTCONbits.GIE = 0;
+    INTCONbits.PEIE = 0;
+    RCONbits.IPEN = 1;
+    INTCON2bits.TMR0IP = 1;
+    INTCONbits.TMR0IF = 0;
+    INTCONbits.TMR0IE = 1;
+    T0CON = 0x48;
+    INTCONbits.TMR0IF = 1;
+    INTCONbits.GIE = 1;
+    INTCONbits.PEIE = 1;
+    T0CONbits.TMR0ON = 1;
+    TMR0 = 0;
+}
+
+void PWM_Init_Ports(void)
+{
+# 96 "pwm_soft.c"
+    TRISBbits.RB2 = 0;
+    LATBbits.LB2 = 0;
+# 127 "pwm_soft.c"
+}
+# 144 "pwm_soft.c"
+void PWM_CH2_Duty(int duty)
+{
+   pwm_value[2] = duty;
 }
