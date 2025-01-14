@@ -5748,12 +5748,20 @@ __attribute__((__unsupported__("The " "Write_b_eep" " routine is no longer suppo
 unsigned char __t1rd16on(void);
 unsigned char __t3rd16on(void);
 # 33 "C:\\Program Files\\Microchip\\xc8\\v2.50\\pic\\include\\xc.h" 2 3
-# 10 "./pwm_soft.h" 2
-# 44 "./pwm_soft.h"
+# 9 "./pwm_soft.h" 2
+# 46 "./pwm_soft.h"
 void PWM_Init(void);
 void PWM_Init_Ports(void);
-# 56 "./pwm_soft.h"
-void PWM_CH2_Duty(int duty);
+# 66 "./pwm_soft.h"
+void PWM_CH4_Duty(int duty);
+
+
+
+void PWM_CH5_Duty(int duty);
+
+
+
+void PWM_CH6_Duty(int duty);
 # 9 "pwm_soft.c" 2
 
 
@@ -5769,8 +5777,16 @@ void __attribute__((picinterrupt(("")))) INT_TMR0()
         if(contador > 256){
             contador = 0;
         }
-# 32 "pwm_soft.c"
-        if(contador < pwm_value[2]){LATBbits.LB2 = 1;} else{LATBbits.LB2 = 0;}
+# 40 "pwm_soft.c"
+        if(contador < pwm_value[4]){LATDbits.LD0 = 1;} else{LATDbits.LD0 = 0;}
+
+
+
+        if(contador < pwm_value[5]){LATDbits.LD1 = 1;} else{LATDbits.LD1 = 0;}
+
+
+
+        if(contador < pwm_value[6]){LATDbits.LD2 = 1;} else{LATDbits.LD2 = 0;}
 # 63 "pwm_soft.c"
         TMR0 = 0;
         INTCONbits.TMR0IF = 0;
@@ -5796,13 +5812,35 @@ void PWM_Init(void)
 
 void PWM_Init_Ports(void)
 {
-# 96 "pwm_soft.c"
-    TRISBbits.RB2 = 0;
-    LATBbits.LB2 = 0;
+# 104 "pwm_soft.c"
+    TRISDbits.RD0 = 0;
+    LATDbits.LD0 = 0;
+
+
+    TRISDbits.RD1 = 0;
+    LATDbits.LD1 = 0;
+
+
+    TRISDbits.RD2 = 0;
+    LATDbits.LD2 = 0;
 # 127 "pwm_soft.c"
 }
-# 144 "pwm_soft.c"
-void PWM_CH2_Duty(int duty)
+# 158 "pwm_soft.c"
+void PWM_CH4_Duty(int duty)
 {
-   pwm_value[2] = duty;
+   pwm_value[4] = duty;
+}
+
+
+
+void PWM_CH5_Duty(int duty)
+{
+   pwm_value[5] = duty;
+}
+
+
+
+void PWM_CH6_Duty(int duty)
+{
+   pwm_value[6] = duty;
 }

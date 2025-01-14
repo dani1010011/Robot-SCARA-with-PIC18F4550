@@ -7,6 +7,7 @@
       <itemPath>18F4550.h</itemPath>
       <itemPath>lcd_lib.h</itemPath>
       <itemPath>SPI.h</itemPath>
+      <itemPath>pwm_soft.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -24,6 +25,7 @@
       <itemPath>lcd_lib.c</itemPath>
       <itemPath>SPI.c</itemPath>
       <itemPath>rx_main.c</itemPath>
+      <itemPath>pwm_soft.c</itemPath>
     </logicalFolder>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>

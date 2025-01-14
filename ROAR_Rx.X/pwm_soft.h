@@ -14,24 +14,22 @@
 
 #define PWM_CHANNEL_1       LATBbits.LB1
 #define PMW_CHANNEL_1_DIR   TRISBbits.RB1
-*/
-/*
+
 #define PWM_CHANNEL_2       LATBbits.LB2
 #define PWM_CHANNEL_2_DIR   TRISBbits.RB2
- */
-/*
+
 #define PWM_CHANNEL_3       LATBbits.LB3
 #define PMW_CHANNEL_3_DIR   TRISBbits.RB3
 */
 #define PWM_CHANNEL_4       LATDbits.LD0
 #define PMW_CHANNEL_4_DIR   TRISDbits.RD0
-
+/*
 #define PWM_CHANNEL_5       LATDbits.LD1
 #define PMW_CHANNEL_5_DIR   TRISDbits.RD1
 
 #define PWM_CHANNEL_6       LATDbits.LD2
 #define PMW_CHANNEL_6_DIR   TRISDbits.RD2
-/*
+
 #define PWM_CHANNEL_7       LATDbits.LD3
 #define PMW_CHANNEL_7_DIR   TRISDbits.RD3
 

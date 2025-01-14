@@ -1,16 +1,35 @@
 Version 4.0 HI-TECH Software Intermediate Code
 [p mainexit ]
+"6587 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4550.h
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4550.h: 6587:     struct {
+[s S269 :4 `uc 1 :2 `uc 1 ]
+[n S269 . PCFG VCFG ]
+"6591
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4550.h: 6591:     struct {
+[s S270 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S270 . PCFG0 PCFG1 PCFG2 PCFG3 VCFG0 VCFG1 ]
+"6599
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4550.h: 6599:     struct {
+[s S271 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S271 . . CHSN3 VCFG01 VCFG11 ]
+"6586
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4550.h: 6586: typedef union {
+[u S268 `S269 1 `S270 1 `S271 1 ]
+[n S268 . . . . ]
+"6606
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4550.h: 6606: extern volatile ADCON1bits_t ADCON1bits __attribute__((address(0xFC1)));
+[v _ADCON1bits `VS268 ~T0 @X0 0 e@4033 ]
 "13 ./lcd_lib.h
 [; ;./lcd_lib.h: 13: void init_LCD(void);
 [v _init_LCD `(v ~T0 @X0 0 ef ]
 "20 ./adc_lib.h
 [; ;./adc_lib.h: 20: void init_ADC(char Puertos_ADC);
 [v _init_ADC `(v ~T0 @X0 0 ef1`uc ]
-"44 ./pwm_soft.h
-[; ;./pwm_soft.h: 44: void PWM_Init(void);
+"46 ./pwm_soft.h
+[; ;./pwm_soft.h: 46: void PWM_Init(void);
 [v _PWM_Init `(v ~T0 @X0 0 ef ]
-"45
-[; ;./pwm_soft.h: 45: void PWM_Init_Ports(void);
+"47
+[; ;./pwm_soft.h: 47: void PWM_Init_Ports(void);
 [v _PWM_Init_Ports `(v ~T0 @X0 0 ef ]
 "3636 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4550.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4550.h: 3636:     struct {
@@ -27,6 +46,21 @@ Version 4.0 HI-TECH Software Intermediate Code
 "3657
 [; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4550.h: 3657: extern volatile TRISBbits_t TRISBbits __attribute__((address(0xF93)));
 [v _TRISBbits `VS147 ~T0 @X0 0 e@3987 ]
+"3858
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4550.h: 3858:     struct {
+[s S154 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S154 . TRISC0 TRISC1 TRISC2 . TRISC6 TRISC7 ]
+"3866
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4550.h: 3866:     struct {
+[s S155 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S155 . RC0 RC1 RC2 . RC6 RC7 ]
+"3857
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4550.h: 3857: typedef union {
+[u S153 `S154 1 `S155 1 ]
+[n S153 . . . ]
+"3875
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4550.h: 3875: extern volatile TRISCbits_t TRISCbits __attribute__((address(0xF94)));
+[v _TRISCbits `VS153 ~T0 @X0 0 e@3988 ]
 "121 C:\Program Files\Microchip\xc8\v2.50\pic\include\c99\stdio.h
 [; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\c99\stdio.h: 121: int sprintf(char *restrict, const char *restrict, ...);
 [v _sprintf `(i ~T0 @X0 0 e1v`*uc`*Cuc ]
@@ -46,12 +80,39 @@ Version 4.0 HI-TECH Software Intermediate Code
 "29 ./SPI.h
 [; ;./SPI.h: 29: void SPI_Init_Master(char reloj, char modo, char smp);
 [v _SPI_Init_Master `(v ~T0 @X0 0 ef3`uc`uc`uc ]
+"2569 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4550.h
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4550.h: 2569:     struct {
+[s S111 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S111 . RC0 RC1 RC2 . RC4 RC5 RC6 RC7 ]
+"2579
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4550.h: 2579:     struct {
+[s S112 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S112 . T1OSO T1OSI CCP1 . TX RX ]
+"2587
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4550.h: 2587:     struct {
+[s S113 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S113 . T13CKI . P1A . CK DT ]
+"2595
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4550.h: 2595:     struct {
+[s S114 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S114 . . CCP2 PA1 ]
+"2600
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4550.h: 2600:     struct {
+[s S115 :1 `uc 1 :1 `uc 1 ]
+[n S115 . . PA2 ]
+"2568
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4550.h: 2568: typedef union {
+[u S110 `S111 1 `S112 1 `S113 1 `S114 1 `S115 1 ]
+[n S110 . . . . . . ]
+"2605
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4550.h: 2605: extern volatile PORTCbits_t PORTCbits __attribute__((address(0xF82)));
+[v _PORTCbits `VS110 ~T0 @X0 0 e@3970 ]
+"45 tx_main.c
+[; ;tx_main.c: 45: void freeMov (void);
+[v _freeMov `(v ~T0 @X0 0 ef ]
 "21 ./adc_lib.h
 [; ;./adc_lib.h: 21: unsigned int read_ADC(unsigned char canal);
 [v _read_ADC `(ui ~T0 @X0 0 ef1`uc ]
-"27 tx_main.c
-[; ;tx_main.c: 27: int mapping (float min_in, float max_in, float min_out, float max_out, int read);
-[v _mapping `(i ~T0 @X0 0 ef5`f`f`f`f`i ]
 "2979 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4550.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4550.h: 2979:     struct {
 [s S127 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -580,8 +641,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "8893
 [; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4550.h: 8893: __asm("TOSU equ 0FFFh");
 [; <" TOSU equ 0FFFh ;# ">
-"22 tx_main.c
-[; ;tx_main.c: 22: int control_data [7] ={0,0,0,0,0,0,0};
+"26 tx_main.c
+[; ;tx_main.c: 26: int control_data [7] ={0,0,0,0,0,0,0};
 [v _control_data `i ~T0 @X0 -> 7 `i e ]
 [i _control_data
 :U ..
@@ -594,147 +655,277 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> 0 `i
 ..
 ]
-"25
-[; ;tx_main.c: 25: char DATA_LCD[16];
+"29
+[; ;tx_main.c: 29: char DATA_LCD[16];
 [v _DATA_LCD `uc ~T0 @X0 -> 16 `i e ]
-"26
-[; ;tx_main.c: 26: int data = 0;
+"30
+[; ;tx_main.c: 30: int data = 0;
 [v _data `i ~T0 @X0 1 e ]
 [i _data
 -> 0 `i
 ]
-"28
-[; ;tx_main.c: 28: int dof1 = 0, x = 0;
+"33
+[; ;tx_main.c: 33: int dof1 = 0, d1 = 0;
 [v _dof1 `i ~T0 @X0 1 e ]
 [i _dof1
 -> 0 `i
 ]
-[v _x `i ~T0 @X0 1 e ]
-[i _x
+[v _d1 `i ~T0 @X0 1 e ]
+[i _d1
 -> 0 `i
 ]
-"29
-[; ;tx_main.c: 29: int dof2 = 0, y = 0;
+"34
+[; ;tx_main.c: 34: int dof2 = 0, d2 = 0;
 [v _dof2 `i ~T0 @X0 1 e ]
 [i _dof2
 -> 0 `i
 ]
-[v _y `i ~T0 @X0 1 e ]
-[i _y
+[v _d2 `i ~T0 @X0 1 e ]
+[i _d2
 -> 0 `i
 ]
-"30
-[; ;tx_main.c: 30: int z = 0;
-[v _z `i ~T0 @X0 1 e ]
-[i _z
+"35
+[; ;tx_main.c: 35: int dof3 = 0, d3 = 0;
+[v _dof3 `i ~T0 @X0 1 e ]
+[i _dof3
+-> 0 `i
+]
+[v _d3 `i ~T0 @X0 1 e ]
+[i _d3
+-> 0 `i
+]
+"36
+[; ;tx_main.c: 36: int dof4 = 0, d4 = 0;
+[v _dof4 `i ~T0 @X0 1 e ]
+[i _dof4
+-> 0 `i
+]
+[v _d4 `i ~T0 @X0 1 e ]
+[i _d4
+-> 0 `i
+]
+"38
+[; ;tx_main.c: 38: int dir1 = 1;
+[v _dir1 `i ~T0 @X0 1 e ]
+[i _dir1
+-> 1 `i
+]
+"43
+[; ;tx_main.c: 43: int counter = 0;
+[v _counter `i ~T0 @X0 1 e ]
+[i _counter
 -> 0 `i
 ]
 [v $root$_main `(v ~T0 @X0 0 e ]
-"32
-[; ;tx_main.c: 32: void main()
+"49
+[; ;tx_main.c: 49: void main()
 [v _main `(v ~T0 @X0 1 ef ]
-"33
-[; ;tx_main.c: 33: {
+"50
+[; ;tx_main.c: 50: {
 {
 [e :U _main ]
 [f ]
-"34
-[; ;tx_main.c: 34:     init_LCD();
-[e ( _init_LCD ..  ]
-"35
-[; ;tx_main.c: 35:     init_ADC(0X0D);
-[e ( _init_ADC (1 -> -> 13 `i `uc ]
-"36
-[; ;tx_main.c: 36:     init_LCD();
-[e ( _init_LCD ..  ]
-"37
-[; ;tx_main.c: 37:     PWM_Init();
-[e ( _PWM_Init ..  ]
-"38
-[; ;tx_main.c: 38:     PWM_Init_Ports();
-[e ( _PWM_Init_Ports ..  ]
-"39
-[; ;tx_main.c: 39:     TRISBbits.RB1 = 0;
-[e = . . _TRISBbits 1 1 -> -> 0 `i `uc ]
-"42
-[; ;tx_main.c: 42:         sprintf(DATA_LCD,">> ROBOT ARM");
-[e ( _sprintf (1 , &U _DATA_LCD :s 1C ]
-"43
-[; ;tx_main.c: 43:         set_Cursor_LCD(1,2);
-[e ( _set_Cursor_LCD (2 , -> -> 1 `i `uc -> -> 2 `i `uc ]
-"44
-[; ;tx_main.c: 44:         writeString_LCD(DATA_LCD);
-[e ( _writeString_LCD (1 -> &U _DATA_LCD `*Cuc ]
-"45
-[; ;tx_main.c: 45:         sprintf(DATA_LCD,"CONTROLLER <<");
-[e ( _sprintf (1 , &U _DATA_LCD :s 2C ]
-"46
-[; ;tx_main.c: 46:         set_Cursor_LCD(2,1);
-[e ( _set_Cursor_LCD (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
-"47
-[; ;tx_main.c: 47:         writeString_LCD(DATA_LCD);
-[e ( _writeString_LCD (1 -> &U _DATA_LCD `*Cuc ]
-"48
-[; ;tx_main.c: 48:         _delay((unsigned long)((1000)*(48000000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 48000000 `ul `d .4000.0 `ul ]
-"49
-[; ;tx_main.c: 49:         clear_LCD();
-[e ( _clear_LCD ..  ]
 "52
-[; ;tx_main.c: 52:     SPI_Init_Master(0, '1', 0);
-[e ( _SPI_Init_Master (3 , , -> -> 0 `i `uc -> -> 49 `ui `uc -> -> 0 `i `uc ]
+[; ;tx_main.c: 52:     ADCON1bits.PCFG = 0x0B;
+[e = . . _ADCON1bits 0 0 -> -> 11 `i `uc ]
 "53
-[; ;tx_main.c: 53:     _delay((unsigned long)((100)*(48000000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 48000000 `ul `d .4000.0 `ul ]
+[; ;tx_main.c: 53:     init_LCD();
+[e ( _init_LCD ..  ]
+"54
+[; ;tx_main.c: 54:     init_ADC(0X0B);
+[e ( _init_ADC (1 -> -> 11 `i `uc ]
 "55
-[; ;tx_main.c: 55:     while(1){
+[; ;tx_main.c: 55:     init_LCD();
+[e ( _init_LCD ..  ]
+"56
+[; ;tx_main.c: 56:     PWM_Init();
+[e ( _PWM_Init ..  ]
+"57
+[; ;tx_main.c: 57:     PWM_Init_Ports();
+[e ( _PWM_Init_Ports ..  ]
+"58
+[; ;tx_main.c: 58:     TRISBbits.RB1 = 0;
+[e = . . _TRISBbits 1 1 -> -> 0 `i `uc ]
+"64
+[; ;tx_main.c: 64:     TRISCbits.RC0 = 1;
+[e = . . _TRISCbits 1 0 -> -> 1 `i `uc ]
+"68
+[; ;tx_main.c: 68:         sprintf(DATA_LCD,">> ROBOT ARM");
+[e ( _sprintf (1 , &U _DATA_LCD :s 1C ]
+"69
+[; ;tx_main.c: 69:         set_Cursor_LCD(1,2);
+[e ( _set_Cursor_LCD (2 , -> -> 1 `i `uc -> -> 2 `i `uc ]
+"70
+[; ;tx_main.c: 70:         writeString_LCD(DATA_LCD);
+[e ( _writeString_LCD (1 -> &U _DATA_LCD `*Cuc ]
+"71
+[; ;tx_main.c: 71:         sprintf(DATA_LCD,"CONTROLLER <<");
+[e ( _sprintf (1 , &U _DATA_LCD :s 2C ]
+"72
+[; ;tx_main.c: 72:         set_Cursor_LCD(2,1);
+[e ( _set_Cursor_LCD (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
+"73
+[; ;tx_main.c: 73:         writeString_LCD(DATA_LCD);
+[e ( _writeString_LCD (1 -> &U _DATA_LCD `*Cuc ]
+"74
+[; ;tx_main.c: 74:         _delay((unsigned long)((1000)*(48000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 48000000 `ul `d .4000.0 `ul ]
+"75
+[; ;tx_main.c: 75:         clear_LCD();
+[e ( _clear_LCD ..  ]
+"78
+[; ;tx_main.c: 78:     SPI_Init_Master(0, '1', 0);
+[e ( _SPI_Init_Master (3 , , -> -> 0 `i `uc -> -> 49 `ui `uc -> -> 0 `i `uc ]
+"79
+[; ;tx_main.c: 79:     _delay((unsigned long)((100)*(48000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 48000000 `ul `d .4000.0 `ul ]
+"83
+[; ;tx_main.c: 83:     while(1){
 [e :U 371 ]
 {
-"56
-[; ;tx_main.c: 56:         dof1 = read_ADC(0);
-[e = _dof1 -> ( _read_ADC (1 -> -> 0 `i `uc `i ]
-"57
-[; ;tx_main.c: 57:         dof2 = read_ADC(1);
-[e = _dof2 -> ( _read_ADC (1 -> -> 1 `i `uc `i ]
-"59
-[; ;tx_main.c: 59:         z = mapping(0,1023,-250,250,dof1);
-[e = _z ( _mapping (4 , , , , -> -> 0 `i `f -> -> 1023 `i `f -> -U -> 250 `i `f -> -> 250 `i `f _dof1 ]
-"60
-[; ;tx_main.c: 60:         x = mapping(0,1023,-250,250,dof2);
-[e = _x ( _mapping (4 , , , , -> -> 0 `i `f -> -> 1023 `i `f -> -U -> 250 `i `f -> -> 250 `i `f _dof2 ]
-"62
-[; ;tx_main.c: 62:         z = (z < 30 && z > -30) ? (z = 0) : (z = z);
-[e = _z ? && < _z -> 30 `i > _z -U -> 30 `i : = _z -> 0 `i = _z _z ]
-"63
-[; ;tx_main.c: 63:         x = (x < 30 && x > -30) ? (x = 0) : (x = x);
-[e = _x ? && < _x -> 30 `i > _x -U -> 30 `i : = _x -> 0 `i = _x _x ]
-"67
-[; ;tx_main.c: 67:         LATAbits.LA5 = 0;
-[e = . . _LATAbits 1 5 -> -> 0 `i `uc ]
-"68
-[; ;tx_main.c: 68:         SPI_Tx(z);
-[e ( _SPI_Tx (1 -> _z `uc ]
-"69
-[; ;tx_main.c: 69:         _delay((unsigned long)((5)*(48000000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 48000000 `ul `d .4000.0 `ul ]
-"70
-[; ;tx_main.c: 70:         LATAbits.LA5 = 1;
-[e = . . _LATAbits 1 5 -> -> 1 `i `uc ]
-"71
-[; ;tx_main.c: 71:         _delay((unsigned long)((5)*(48000000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 48000000 `ul `d .4000.0 `ul ]
-"72
-[; ;tx_main.c: 72:     }
+"97
+[; ;tx_main.c: 97:         switch (counter) {
+[e $U 374  ]
+{
+"98
+[; ;tx_main.c: 98:             case 0:
+[e :U 375 ]
+"99
+[; ;tx_main.c: 99:                 sprintf(DATA_LCD,"MUEVE LIBREMENTE");
+[e ( _sprintf (1 , &U _DATA_LCD :s 3C ]
+"100
+[; ;tx_main.c: 100:                 set_Cursor_LCD(1,1);
+[e ( _set_Cursor_LCD (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
+"101
+[; ;tx_main.c: 101:                 writeString_LCD(DATA_LCD);
+[e ( _writeString_LCD (1 -> &U _DATA_LCD `*Cuc ]
+"102
+[; ;tx_main.c: 102:                 sprintf(DATA_LCD,"EL ROBOT");
+[e ( _sprintf (1 , &U _DATA_LCD :s 4C ]
+"103
+[; ;tx_main.c: 103:                 set_Cursor_LCD(2,4);
+[e ( _set_Cursor_LCD (2 , -> -> 2 `i `uc -> -> 4 `i `uc ]
+"104
+[; ;tx_main.c: 104:                 writeString_LCD(DATA_LCD);
+[e ( _writeString_LCD (1 -> &U _DATA_LCD `*Cuc ]
+"105
+[; ;tx_main.c: 105:                 if(PORTCbits.RC0 == 1){
+[e $ ! == -> . . _PORTCbits 0 0 `i -> 1 `i 376  ]
+{
+"106
+[; ;tx_main.c: 106:                     while(PORTCbits.RC0 == 1);
+[e $U 377  ]
+[e :U 378 ]
+[e :U 377 ]
+[e $ == -> . . _PORTCbits 0 0 `i -> 1 `i 378  ]
+[e :U 379 ]
+"107
+[; ;tx_main.c: 107:                     freeMov();
+[e ( _freeMov ..  ]
+"108
+[; ;tx_main.c: 108:                 }
+}
+[e :U 376 ]
+"109
+[; ;tx_main.c: 109:                 break;
+[e $U 373  ]
+"110
+[; ;tx_main.c: 110:             case 1:
+[e :U 380 ]
+"111
+[; ;tx_main.c: 111:                 sprintf(DATA_LCD,"MUEVE PARA");
+[e ( _sprintf (1 , &U _DATA_LCD :s 5C ]
+"112
+[; ;tx_main.c: 112:                 set_Cursor_LCD(1,3);
+[e ( _set_Cursor_LCD (2 , -> -> 1 `i `uc -> -> 3 `i `uc ]
+"113
+[; ;tx_main.c: 113:                 writeString_LCD(DATA_LCD);
+[e ( _writeString_LCD (1 -> &U _DATA_LCD `*Cuc ]
+"114
+[; ;tx_main.c: 114:                 sprintf(DATA_LCD,"GRABAR");
+[e ( _sprintf (1 , &U _DATA_LCD :s 6C ]
+"115
+[; ;tx_main.c: 115:                 set_Cursor_LCD(2,5);
+[e ( _set_Cursor_LCD (2 , -> -> 2 `i `uc -> -> 5 `i `uc ]
+"116
+[; ;tx_main.c: 116:                 writeString_LCD(DATA_LCD);
+[e ( _writeString_LCD (1 -> &U _DATA_LCD `*Cuc ]
+"117
+[; ;tx_main.c: 117:                 break;
+[e $U 373  ]
+"118
+[; ;tx_main.c: 118:             case 2:
+[e :U 381 ]
+"119
+[; ;tx_main.c: 119:                 sprintf(DATA_LCD,"MOVIMIENTO");
+[e ( _sprintf (1 , &U _DATA_LCD :s 7C ]
+"120
+[; ;tx_main.c: 120:                 set_Cursor_LCD(1,3);
+[e ( _set_Cursor_LCD (2 , -> -> 1 `i `uc -> -> 3 `i `uc ]
+"121
+[; ;tx_main.c: 121:                 writeString_LCD(DATA_LCD);
+[e ( _writeString_LCD (1 -> &U _DATA_LCD `*Cuc ]
+"122
+[; ;tx_main.c: 122:                 sprintf(DATA_LCD,"GUARDADO");
+[e ( _sprintf (1 , &U _DATA_LCD :s 8C ]
+"123
+[; ;tx_main.c: 123:                 set_Cursor_LCD(2,4);
+[e ( _set_Cursor_LCD (2 , -> -> 2 `i `uc -> -> 4 `i `uc ]
+"124
+[; ;tx_main.c: 124:                 writeString_LCD(DATA_LCD);
+[e ( _writeString_LCD (1 -> &U _DATA_LCD `*Cuc ]
+"125
+[; ;tx_main.c: 125:                 break;
+[e $U 373  ]
+"126
+[; ;tx_main.c: 126:             default:
+[e :U 382 ]
+"127
+[; ;tx_main.c: 127:                 sprintf(DATA_LCD,"ERROR");
+[e ( _sprintf (1 , &U _DATA_LCD :s 9C ]
+"128
+[; ;tx_main.c: 128:                 set_Cursor_LCD(1,2);
+[e ( _set_Cursor_LCD (2 , -> -> 1 `i `uc -> -> 2 `i `uc ]
+"129
+[; ;tx_main.c: 129:                 writeString_LCD(DATA_LCD);
+[e ( _writeString_LCD (1 -> &U _DATA_LCD `*Cuc ]
+"130
+[; ;tx_main.c: 130:                 sprintf(DATA_LCD,"MENU");
+[e ( _sprintf (1 , &U _DATA_LCD :s 10C ]
+"131
+[; ;tx_main.c: 131:                 set_Cursor_LCD(2,2);
+[e ( _set_Cursor_LCD (2 , -> -> 2 `i `uc -> -> 2 `i `uc ]
+"132
+[; ;tx_main.c: 132:                 writeString_LCD(DATA_LCD);
+[e ( _writeString_LCD (1 -> &U _DATA_LCD `*Cuc ]
+"133
+[; ;tx_main.c: 133:                 break;
+[e $U 373  ]
+"134
+[; ;tx_main.c: 134:         }
+}
+[e $U 373  ]
+[e :U 374 ]
+[e [\ _counter , $ -> 0 `i 375
+ , $ -> 1 `i 380
+ , $ -> 2 `i 381
+ 382 ]
+[e :U 373 ]
+"135
+[; ;tx_main.c: 135:         clear_LCD();
+[e ( _clear_LCD ..  ]
+"137
+[; ;tx_main.c: 137:     }
 }
 [e :U 370 ]
 [e $U 371  ]
 [e :U 372 ]
-"73
-[; ;tx_main.c: 73: }
+"138
+[; ;tx_main.c: 138: }
 [e :UE 369 ]
 }
-"75
-[; ;tx_main.c: 75: int mapping (float min_in, float max_in, float min_out, float max_out, int read){
+"140
+[; ;tx_main.c: 140: int mapping (float min_in, float max_in, float min_out, float max_out, int read){
 [v _mapping `(i ~T0 @X0 1 ef5`f`f`f`f`i ]
 {
 [e :U _mapping ]
@@ -744,29 +935,226 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _max_out `f ~T0 @X0 1 r4 ]
 [v _read `i ~T0 @X0 1 r5 ]
 [f ]
-"76
-[; ;tx_main.c: 76:     int y = 0; float m; float b;
+"141
+[; ;tx_main.c: 141:     int y = 0; float m; float b;
 [v _y `i ~T0 @X0 1 a ]
 [e = _y -> 0 `i ]
 [v _m `f ~T0 @X0 1 a ]
 [v _b `f ~T0 @X0 1 a ]
-"77
-[; ;tx_main.c: 77:     m = (float)((max_out - min_out) / (max_in - min_in));
+"142
+[; ;tx_main.c: 142:     m = (float)((max_out - min_out) / (max_in - min_in));
 [e = _m / - _max_out _min_out - _max_in _min_in ]
-"78
-[; ;tx_main.c: 78:     b = (float)((min_out) - (m * min_in));
+"143
+[; ;tx_main.c: 143:     b = (float)((min_out) - (m * min_in));
 [e = _b - _min_out * _m _min_in ]
-"79
-[; ;tx_main.c: 79:     y = ((m) * read) + b;
+"144
+[; ;tx_main.c: 144:     y = ((m) * read) + b;
 [e = _y -> + * _m -> _read `f _b `i ]
-"80
-[; ;tx_main.c: 80:     return y;
+"145
+[; ;tx_main.c: 145:     return y;
 [e ) _y ]
-[e $UE 373  ]
-"81
-[; ;tx_main.c: 81: }
-[e :UE 373 ]
+[e $UE 383  ]
+"146
+[; ;tx_main.c: 146: }
+[e :UE 383 ]
+}
+"148
+[; ;tx_main.c: 148: void freeMov (void){
+[v _freeMov `(v ~T0 @X0 1 ef ]
+{
+[e :U _freeMov ]
+[f ]
+"149
+[; ;tx_main.c: 149:     int flag = 0;
+[v _flag `i ~T0 @X0 1 a ]
+[e = _flag -> 0 `i ]
+"151
+[; ;tx_main.c: 151:     while(flag == 0){
+[e $U 385  ]
+[e :U 386 ]
+{
+"152
+[; ;tx_main.c: 152:         if(PORTCbits.RC0 == 1){
+[e $ ! == -> . . _PORTCbits 0 0 `i -> 1 `i 388  ]
+{
+"153
+[; ;tx_main.c: 153:             while(PORTCbits.RC0 == 1);
+[e $U 389  ]
+[e :U 390 ]
+[e :U 389 ]
+[e $ == -> . . _PORTCbits 0 0 `i -> 1 `i 390  ]
+[e :U 391 ]
+"154
+[; ;tx_main.c: 154:             flag ++;
+[e ++ _flag -> 1 `i ]
+"155
+[; ;tx_main.c: 155:         }
+}
+[e :U 388 ]
+"157
+[; ;tx_main.c: 157:         dof1 = read_ADC(0);
+[e = _dof1 -> ( _read_ADC (1 -> -> 0 `i `uc `i ]
+"158
+[; ;tx_main.c: 158:         dof2 = read_ADC(1);
+[e = _dof2 -> ( _read_ADC (1 -> -> 1 `i `uc `i ]
+"159
+[; ;tx_main.c: 159:         dof3 = read_ADC(2);
+[e = _dof3 -> ( _read_ADC (1 -> -> 2 `i `uc `i ]
+"160
+[; ;tx_main.c: 160:         dof4 = read_ADC(3);
+[e = _dof4 -> ( _read_ADC (1 -> -> 3 `i `uc `i ]
+"162
+[; ;tx_main.c: 162:         d1 = mapping(0,1023,-250,250,dof1);
+[e = _d1 ( _mapping (4 , , , , -> -> 0 `i `f -> -> 1023 `i `f -> -U -> 250 `i `f -> -> 250 `i `f _dof1 ]
+"163
+[; ;tx_main.c: 163:         d2 = mapping(0,1023,-250,250,dof2);
+[e = _d2 ( _mapping (4 , , , , -> -> 0 `i `f -> -> 1023 `i `f -> -U -> 250 `i `f -> -> 250 `i `f _dof2 ]
+"164
+[; ;tx_main.c: 164:         d3 = mapping(0,1023,-250,250,dof3);
+[e = _d3 ( _mapping (4 , , , , -> -> 0 `i `f -> -> 1023 `i `f -> -U -> 250 `i `f -> -> 250 `i `f _dof3 ]
+"165
+[; ;tx_main.c: 165:         d4 = mapping(0,1023,-250,250,dof4);
+[e = _d4 ( _mapping (4 , , , , -> -> 0 `i `f -> -> 1023 `i `f -> -U -> 250 `i `f -> -> 250 `i `f _dof4 ]
+"167
+[; ;tx_main.c: 167:         d1 = (d1 < 30 && d1 > -30) ? (d1 = 0) : (d1 = 1);
+[e = _d1 ? && < _d1 -> 30 `i > _d1 -U -> 30 `i : = _d1 -> 0 `i = _d1 -> 1 `i ]
+"168
+[; ;tx_main.c: 168:         d2 = (d2 < 30 && d2 > -30) ? (d2 = 0) : (d2 = 1);
+[e = _d2 ? && < _d2 -> 30 `i > _d2 -U -> 30 `i : = _d2 -> 0 `i = _d2 -> 1 `i ]
+"169
+[; ;tx_main.c: 169:         d3 = (d3 < 30 && d3 > -30) ? (d3 = 0) : (d3 = 1);
+[e = _d3 ? && < _d3 -> 30 `i > _d3 -U -> 30 `i : = _d3 -> 0 `i = _d3 -> 1 `i ]
+"170
+[; ;tx_main.c: 170:         d4 = (d4 < 30 && d4 > -30) ? (d4 = 0) : (d4 = 1);
+[e = _d4 ? && < _d4 -> 30 `i > _d4 -U -> 30 `i : = _d4 -> 0 `i = _d4 -> 1 `i ]
+"173
+[; ;tx_main.c: 173:         data = d1 + dir1;
+[e = _data + _d1 _dir1 ]
+"174
+[; ;tx_main.c: 174:         LATAbits.LA5 = 0;
+[e = . . _LATAbits 1 5 -> -> 0 `i `uc ]
+"175
+[; ;tx_main.c: 175:         SPI_Tx(d1);
+[e ( _SPI_Tx (1 -> _d1 `uc ]
+"176
+[; ;tx_main.c: 176:         _delay((unsigned long)((5)*(48000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 48000000 `ul `d .4000.0 `ul ]
+"177
+[; ;tx_main.c: 177:         LATAbits.LA5 = 1;
+[e = . . _LATAbits 1 5 -> -> 1 `i `uc ]
+"178
+[; ;tx_main.c: 178:         _delay((unsigned long)((5)*(48000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 48000000 `ul `d .4000.0 `ul ]
+"179
+[; ;tx_main.c: 179:     }
+}
+[e :U 385 ]
+"151
+[; ;tx_main.c: 151:     while(flag == 0){
+[e $ == _flag -> 0 `i 386  ]
+[e :U 387 ]
+"180
+[; ;tx_main.c: 180: }
+[e :UE 384 ]
+}
+"182
+[; ;tx_main.c: 182: void saveMov (void){
+[v _saveMov `(v ~T0 @X0 1 ef ]
+{
+[e :U _saveMov ]
+[f ]
+"183
+[; ;tx_main.c: 183:     int flag = 0;
+[v _flag `i ~T0 @X0 1 a ]
+[e = _flag -> 0 `i ]
+"185
+[; ;tx_main.c: 185:     while(flag == 0){
+[e $U 393  ]
+[e :U 394 ]
+{
+"186
+[; ;tx_main.c: 186:         if(PORTCbits.RC0 == 1){
+[e $ ! == -> . . _PORTCbits 0 0 `i -> 1 `i 396  ]
+{
+"187
+[; ;tx_main.c: 187:             while(PORTCbits.RC0 == 1);
+[e $U 397  ]
+[e :U 398 ]
+[e :U 397 ]
+[e $ == -> . . _PORTCbits 0 0 `i -> 1 `i 398  ]
+[e :U 399 ]
+"188
+[; ;tx_main.c: 188:             flag ++;
+[e ++ _flag -> 1 `i ]
+"189
+[; ;tx_main.c: 189:         }
+}
+[e :U 396 ]
+"191
+[; ;tx_main.c: 191:     }
+}
+[e :U 393 ]
+"185
+[; ;tx_main.c: 185:     while(flag == 0){
+[e $ == _flag -> 0 `i 394  ]
+[e :U 395 ]
+"192
+[; ;tx_main.c: 192: }
+[e :UE 392 ]
+}
+"194
+[; ;tx_main.c: 194: void loadMov (void){
+[v _loadMov `(v ~T0 @X0 1 ef ]
+{
+[e :U _loadMov ]
+[f ]
+"195
+[; ;tx_main.c: 195:     int flag = 0;
+[v _flag `i ~T0 @X0 1 a ]
+[e = _flag -> 0 `i ]
+"197
+[; ;tx_main.c: 197:     while(flag == 0){
+[e $U 401  ]
+[e :U 402 ]
+{
+"198
+[; ;tx_main.c: 198:         if(PORTCbits.RC0 == 1){
+[e $ ! == -> . . _PORTCbits 0 0 `i -> 1 `i 404  ]
+{
+"199
+[; ;tx_main.c: 199:             while(PORTCbits.RC0 == 1);
+[e $U 405  ]
+[e :U 406 ]
+[e :U 405 ]
+[e $ == -> . . _PORTCbits 0 0 `i -> 1 `i 406  ]
+[e :U 407 ]
+"200
+[; ;tx_main.c: 200:             flag ++;
+[e ++ _flag -> 1 `i ]
+"201
+[; ;tx_main.c: 201:         }
+}
+[e :U 404 ]
+"202
+[; ;tx_main.c: 202:     }
+}
+[e :U 401 ]
+"197
+[; ;tx_main.c: 197:     while(flag == 0){
+[e $ == _flag -> 0 `i 402  ]
+[e :U 403 ]
+"203
+[; ;tx_main.c: 203: }
+[e :UE 400 ]
 }
 [p f _sprintf 8388608 ]
+[a 10C 77 69 78 85 0 ]
+[a 4C 69 76 32 82 79 66 79 84 0 ]
+[a 9C 69 82 82 79 82 0 ]
+[a 6C 71 82 65 66 65 82 0 ]
+[a 7C 77 79 86 73 77 73 69 78 84 79 0 ]
+[a 8C 71 85 65 82 68 65 68 79 0 ]
 [a 1C 62 62 32 82 79 66 79 84 32 65 82 77 0 ]
+[a 3C 77 85 69 86 69 32 76 73 66 82 69 77 69 78 84 69 0 ]
+[a 5C 77 85 69 86 69 32 80 65 82 65 0 ]
 [a 2C 67 79 78 84 82 79 76 76 69 82 32 60 60 0 ]

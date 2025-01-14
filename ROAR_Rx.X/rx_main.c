@@ -10,22 +10,36 @@
 #include "18F4550.h"
 #include <xc.h>
 #include "SPI.h"
+#include "pwm_soft.h"
 #include <stdio.h>
 
-//Macros
-
 //Variables
+  int dato = 0;
 
 void main()
 {
-    char dato;
+    PWM_Init();
+    PWM_Init_Ports();
+    
     SPI_Init_Slave(SPI_Slave_R5, MODO_1);
     __delay_ms(100);
     
     while(1){
+        /*
+        if(dato == 8){
+            PWM_CH4_Duty(100);
+            LATDbits.LD1 = 1;
+        }else if(dato == 4){
+            PWM_CH4_Duty(100);
+            LATDbits.LD1 = 0;
+        }else{
+            PWM_CH4_Duty(100);
+            LATDbits.LD1 = 1;
+        }
+        */
         //SPI data read:
         dato = SPI_Rx();
-        __delay_ms(5);   
+        __delay_ms(5);
     }
     
 }
